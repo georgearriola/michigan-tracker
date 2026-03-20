@@ -1,0 +1,73 @@
+:root {
+  --um-blue: #00274c;
+  --um-maize: #ffcb05;
+  --bg: #f4f4f4;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg);
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+header {
+  text-align: center;
+  background: var(--um-blue);
+  color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+h1 { margin: 0; color: var(--um-maize); }
+
+nav {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background: #ddd;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button.active {
+  background: var(--um-blue);
+  color: var(--um-maize);
+}
+
+.card {
+  border: 1px solid #eee;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
+.status-win { color: #2ecc71; font-weight: bold; }
+.status-upcoming { color: var(--um-blue); font-weight: bold; }
+
+.opponent-preview {
+  background: #f9f9f9;
+  font-size: 0.9rem;
+  padding: 10px;
+  border-left: 4px solid var(--um-maize);
+  margin-top: 10px;
+}
